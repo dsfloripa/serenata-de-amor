@@ -35,7 +35,7 @@ This is an example to run only Jarbas. First run migrations and provision:
 
 ```console
 $ docker-compose run --rm django python manage.py migrate
-$ docker-compose run --rm django python manage.py reimbursements /mnt/data/reimbursements-2018.csv
+$ docker-compose run --rm django python manage.py reimbursements /mnt/data/reimbursements_sample.csv
 $ docker-compose run --rm django python manage.py companies /mnt/data/companies_sample.xz
 $ docker-compose run --rm django python manage.py suspicions /mnt/data/suspicions_sample.xz
 $ docker-compose run --rm django python manage.py searchvector
@@ -75,7 +75,6 @@ $ git checkout -b <YOUR-GITHUB-USERNAME>-new-stuff
 ```
 
 Please, note that we prefix branch names with GitHub usernames, this helps us in keeping track of changes and who is working on them.
-
 
 **4. Do what you do best**
 
